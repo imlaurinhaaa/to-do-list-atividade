@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List ✔</title>
+</head>
+<body>
+    <div id="container">
+        <h1>To-Do List ✨</h1>
+        <form>
+            <input type="text" name="tarefa" id="tarefa" placeholder="Digite a tarefa" required>
+            <input type="datetime-local" name="dataHora" id="data-hora" required>
+            <select id="diaSemana" name="d-semana" required>
+                <option value="segunda-feira">Segunda-Feira</option>
+                <option value="terca-feira">Terça-Feira</option>
+                <option value="quarta-feira">Quarta-Feira</option>
+                <option value="quinta-feira">Quinta-Feira</option>
+                <option value="sexta-feira">Sexta-Feira</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+            <input type="radio" id="baixo" name="prioridade" value="baixo" required>
+            <label for="baixo">Baixo</label>
+            <input type="radio" id="medio" name="prioridade" value="medio" required>
+            <label for="medio">Médio</label>
+            <input type="radio" id="urgente" name="prioridade" value="urgente" required>
+            <label for="urgente">Urgente</label>
+
+            <button onclick="adicionar('+')">Adicionar</button>
+        </form>
+    </div>
+
+    <div id="tarefas">
+        <h2>Suas Tarefas:<span id="resposta"></span></h2>
+    </div>
+</body>
+</html>
