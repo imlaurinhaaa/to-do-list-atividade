@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List ✔</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="container">
         <h1>To-Do List ✨</h1>
         <form>
             <input type="text" name="tarefa" id="tarefa" placeholder="Digite a tarefa" required>
-            <input type="datetime-local" name="dataHora" id="data-hora" required>
-            <select id="diaSemana" name="d-semana" required>
+            <input type="datetime-local" name="dataHora" id="dataHora" required>
+            <select id="diaSemana" name="diaSemana" required>
                 <option value="segunda-feira">Segunda-Feira</option>
                 <option value="terca-feira">Terça-Feira</option>
                 <option value="quarta-feira">Quarta-Feira</option>
@@ -27,12 +28,16 @@
             <input type="radio" id="urgente" name="prioridade" value="urgente" required>
             <label for="urgente">Urgente</label>
 
-            <button onclick="adicionar('+')">Adicionar</button>
+            <button type="button" onclick="adicionar()">Adicionar</button>
         </form>
     </div>
 
     <div id="tarefas">
-        <h2>Suas Tarefas:<span id="resposta"></span></h2>
+        <h2>Suas Tarefas:</h2>
+    </div>
+
+    <div id="tarefas-concluidas">
+        <h2>Tarefas Concluídas:</h2>
     </div>
 </body>
 </html>
