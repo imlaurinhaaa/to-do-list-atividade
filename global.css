@@ -23,18 +23,18 @@ body {
     font-style: normal;
 }
 
-.container {
-    background-color: #ff54a1;
-    width: 50%;
-    padding: 5%;
-    border-radius: 18px;
-    text-align: center;
-}
-
 .work-sans {
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
+}
+
+.container {
+    background-color: #ff54a1;
+    width: 45%;
+    padding: 2%;
+    border-radius: 18px;
+    text-align: center;
 }
 
 h1 {
@@ -69,6 +69,7 @@ input {
     border: none;
     margin-top: 10px;
     font-family: "Work Sans", serif;
+    color: black;
     font-size: 1rem;
 }
 
@@ -100,11 +101,34 @@ button {
     margin-top: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    
 }
 
 button:hover {
     background-color: #49d459;
     color: #fff;
     transform: scale(1.1);
-  }
+}
+
+#tarefas {
+    background-color: #ff54a19d;
+    font-family: "Work Sans", serif;
+    margin-top: 2rem;
+    width: 45%;
+    padding: 1%;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.novaTarefa {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 25px;
+    text-align: center;
+}
+
+.remover:hover {
+    background-color: #f13c3c;
+    color: #fff;
+    transform: scale(1);
+}
