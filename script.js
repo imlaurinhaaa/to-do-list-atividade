@@ -4,6 +4,11 @@ function adicionar() {
     let diaSemana = document.getElementById("diaSemana").value;
     let prioridade = document.querySelector('input[name="prioridade"]:checked').value;
 
+    if (tarefa == '' || dataHora == '' || diaSemana == '' || prioridade == '') {
+        alert('Preencha todos os campos!');
+        return;
+    } 
+
     let mensagem = `📑 Tarefa: ${tarefa} 
     ⌚ Data e Hora: ${dataHora} 
     📅 Dia da Semana: ${diaSemana} 
