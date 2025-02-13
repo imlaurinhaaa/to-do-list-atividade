@@ -36,9 +36,6 @@ function removerTarefa(tarefa) {
 function concluirTarefa(tarefa, checkbox) {
     if (checkbox.checked) {
         tarefa.style.textDecoration = 'line-through';
-        document.getElementById('tarefas-concluidas').appendChild(tarefa);
-    } else {
-        tarefa.style.textDecoration = 'none';
         document.getElementById('tarefas').appendChild(tarefa);
     }
 }

@@ -5,39 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List ✔</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="global.css">
 </head>
 <body>
-    <div id="container">
-        <h1>To-Do List ✨</h1>
-        <form>
-            <input type="text" name="tarefa" id="tarefa" placeholder="Digite a tarefa" required>
-            <input type="datetime-local" name="dataHora" id="dataHora" required>
-            <select id="diaSemana" name="diaSemana" required>
-                <option value="segunda-feira">Segunda-Feira</option>
-                <option value="terca-feira">Terça-Feira</option>
-                <option value="quarta-feira">Quarta-Feira</option>
-                <option value="quinta-feira">Quinta-Feira</option>
-                <option value="sexta-feira">Sexta-Feira</option>
-                <option value="sabado">Sábado</option>
-                <option value="domingo">Domingo</option>
-            </select>
-            <input type="radio" id="baixo" name="prioridade" value="baixo" required>
-            <label for="baixo">Baixo</label>
-            <input type="radio" id="medio" name="prioridade" value="medio" required>
-            <label for="medio">Médio</label>
-            <input type="radio" id="urgente" name="prioridade" value="urgente" required>
-            <label for="urgente">Urgente</label>
-
-            <button type="button" onclick="adicionar()">Adicionar</button>
-        </form>
+    <h1>To-Do List 💌</h1>
+    <div class="container">
+        <div class="forms">
+            <form>
+                <div class="section1">
+                <input type="text" name="tarefa" id="tarefa" placeholder="Digite a tarefa" required>
+                <input type="datetime-local" name="dataHora" id="dataHora" required>
+            </div>
+            <div class="section2">
+                <select id="diaSemana" name="diaSemana" required>
+                    <option value="segunda-feira">Segunda-Feira</option>
+                    <option value="terca-feira">Terça-Feira</option>
+                    <option value="quarta-feira">Quarta-Feira</option>
+                    <option value="quinta-feira">Quinta-Feira</option>
+                    <option value="sexta-feira">Sexta-Feira</option>
+                    <option value="sabado">Sábado</option>
+                    <option value="domingo">Domingo</option>
+                </select>
+                <input type="radio" id="baixo" name="prioridade" value="baixo" required>
+                <label for="baixo">Baixo</label>
+                <input type="radio" id="medio" name="prioridade" value="medio" required>
+                <label for="medio">Médio</label>
+                <input type="radio" id="urgente" name="prioridade" value="urgente" required>
+                <label for="urgente">Urgente</label>
+            </div>
+    
+                <button type="button" onclick="adicionar()">Adicionar</button>
+            </form>
+        </div>
     </div>
 
     <div id="tarefas">
-        <h2>Suas Tarefas:</h2>
-    </div>
-
-    <div id="tarefas-concluidas">
-        <h2>Tarefas Concluídas:</h2>
     </div>
 </body>
 </html>

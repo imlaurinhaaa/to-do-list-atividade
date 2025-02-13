@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fea8cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+}
+
+.croissant-one-regular {
+    font-family: "Croissant One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    background-color: #ff54a1;
+    width: 50%;
+    padding: 5%;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.work-sans {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: "Croissant One", serif;
+    font-weight: 400;
+    font-size: 55px;
+    font-style: normal;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+    gap: 3%;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: "Work Sans", serif;
+    font-size: 1rem;
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Work Sans", serif;
+    font-size: 1rem;
+}
+
+label {
+    color: #fff;
+    font-family: "Work Sans", serif;
+    font-weight: 500;
+    margin-top: 12px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 15px 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color:#ff54a1;
+    font-family: "Work Sans", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #49d459;
+    color: #fff;
+    transform: scale(1.1);
+  }
