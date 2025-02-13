@@ -14,9 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
-    min-width: 100vh;
 }
 
 .croissant-one-regular {

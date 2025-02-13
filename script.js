@@ -28,8 +28,14 @@ function adicionar() {
     };
 
     novaTarefa.appendChild(remover);
+
+    document.getElementById("tarefa").value = '';
+    document.getElementById("dataHora").value = '';
+    document.querySelector('input[name="prioridade"]:checked').checked = false;
 }
 
 function removerTarefa(tarefa) {
     tarefa.remove();
 }
+
+
